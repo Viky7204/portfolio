@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>T Vikas – Data & Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5fa;--ink:#0e1a33;--mute:#4d5a75;--line:#cfd7e6;--acc:#2250e6;--accbg:#e1e9ff;--panel:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1424;--ink:#e8edf8;--mute:#9aa8c4;--line:#27324d;--acc:#7c9bff;--accbg:#1a2748;--panel:#121b30}}
+:root[data-theme="dark"]{--bg:#0d1424;--ink:#e8edf8;--mute:#9aa8c4;--line:#27324d;--acc:#7c9bff;--accbg:#1a2748;--panel:#121b30}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 20px 64px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;margin:0;line-height:1.1}
+h1{font-size:clamp(2.6rem,10vw,4.4rem);font-weight:800;letter-spacing:-.03em}
+h2{font-size:1.5rem;font-weight:700;margin:56px 0 16px}
+h3{font-size:1.15rem;font-weight:700}
+p{margin:0}
+a{color:var(--acc)}
+a:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:3px}
+.role{font-size:1.2rem;color:var(--mute);margin-top:12px;max-width:34em}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:28px 0 8px;font-family:"Bricolage Grotesque",sans-serif;font-weight:500}
+.flow span{background:var(--accbg);color:var(--ink);padding:6px 14px;border-radius:999px;font-size:.95rem}
+.flow i{color:var(--acc);font-style:normal}
+.stat{margin-top:14px;color:var(--mute)}
+.stat b{color:var(--ink)}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.contact a{padding:10px 18px;border:1.5px solid var(--ink);border-radius:8px;color:var(--ink);text-decoration:none;font-weight:500}
+.contact a.main{background:var(--ink);color:var(--bg)}
+.proj{border-top:1.5px solid var(--line);padding:22px 0}
+.proj:last-of-type{border-bottom:1.5px solid var(--line)}
+.stack{color:var(--acc);font-size:.92rem;margin:4px 0 10px}
+.proj ul{margin:0;padding-left:20px;color:var(--mute)}
+.proj li{margin-bottom:6px}
+.proj .lnk{display:inline-block;margin-top:8px;font-weight:500}
+dl{margin:0;display:grid;grid-template-columns:150px 1fr;gap:10px 18px}
+dt{font-weight:500}
+dd{margin:0;color:var(--mute)}
+.edu{background:var(--panel);border:1.5px solid var(--line);border-radius:10px;padding:18px 20px}
+.cert{margin:0;padding-left:20px;color:var(--mute)}
+.cert li{margin-bottom:8px}
+.cert b{color:var(--ink);font-weight:500}
+footer{margin-top:56px;color:var(--mute);font-size:.9rem}
+@media (max-width:560px){dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:10px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>T Vikas</h1>
+<p class="role">Data analyst and full-stack developer. I turn large datasets into clear insights and build the backends that deliver them.</p>
+<div class="flow" aria-label="What I do"><span>Raw data</span><i>›</i><span>Clean</span><i>›</i><span>Analyse</span><i>›</i><span>Serve via API</span></div>
+<p class="stat"><b>2.2 million</b> loan records analysed, with data preparation time cut by <b>40%</b>.</p>
+<nav class="contact" aria-label="Contact">
+<a class="main" href="mailto:tv590883@gmail.com">Email me</a>
+<a href="https://github.com/Viky7204">GitHub</a>
+<a href="tel:+917204861576">+91 72048 61576</a>
+</nav>
+</header>
+
+<h2>Projects</h2>
+<section>
+<article class="proj">
+<h3>Lending Club Loan Risk Analysis</h3>
+<p class="stack">SQL, PySpark, Spark SQL, EDA, Data Visualization</p>
+<ul>
+<li>Explored about 2.2 million loan records to find the main default drivers: interest rate, DTI and grade.</li>
+<li>Cleaned and standardised 50+ columns (missing values, outliers), cutting data preparation time by 40%.</li>
+</ul>
+<a class="lnk" href="https://github.com/Viky7204/lending-club-loan-risk-analysis">View on GitHub</a>
+</article>
+<article class="proj">
+<h3>Weather Data Analytics Pipeline</h3>
+<p class="stack">Python, Pandas, SQL, Docker, REST APIs, YAML</p>
+<ul>
+<li>Built an end-to-end pipeline that pulls live OpenWeatherMap data for 10+ cities, with quality checks and validation rules, in under 2 minutes.</li>
+<li>Added structured logging, YAML configuration and unit tests for reliable, repeatable loads.</li>
+</ul>
+<a class="lnk" href="https://github.com/Viky7204">View on GitHub</a>
+</article>
+<article class="proj">
+<h3>E-commerce REST API Backend</h3>
+<p class="stack">Node.js, Express.js, JWT, bcrypt, REST APIs, Middleware</p>
+<ul>
+<li>Built a secure backend for products, cart, orders and inventory, with customer and admin roles and JWT login.</li>
+<li>Wrote modular routes, auth and validation middleware, error handling and input sanitisation.</li>
+</ul>
+<a class="lnk" href="https://github.com/Viky7204/ecommerce-rest-api">View on GitHub</a>
+</article>
+<article class="proj">
+<h3>Task Management API with Authentication</h3>
+<p class="stack">Node.js, Express.js, JWT, bcrypt, Middleware, REST APIs</p>
+<ul>
+<li>Built a multi-user task API with signup and login, protected routes, priority and status filters, and ownership-based access.</li>
+<li>Added password hashing, request validation, centralised error handling and pagination.</li>
+</ul>
+</article>
+</section>
+
+<h2>Skills</h2>
+<dl>
+<dt>Languages</dt><dd>Python, SQL, JavaScript, HTML5, CSS3</dd>
+<dt>Frontend</dt><dd>React, JavaScript (ES6+), Tailwind CSS, Responsive Design</dd>
+<dt>Backend</dt><dd>Node.js, Express.js, REST APIs, JWT, Middleware, Postman</dd>
+<dt>Database</dt><dd>MySQL, Data Warehousing</dd>
+<dt>Data and BI</dt><dd>Power BI, DAX, Excel (Pivot Tables), Pandas, NumPy, EDA</dd>
+<dt>Data engineering</dt><dd>PySpark, Apache Spark, Spark SQL, ETL/ELT, Azure Databricks, Azure Data Factory</dd>
+<dt>Cloud and tools</dt><dd>Microsoft Azure, Docker, Git, GitHub, Agile</dd>
+<dt>AI</dt><dd>Prompt Engineering, RAG, LangChain, LLM APIs</dd>
+</dl>
+
+<h2>Education</h2>
+<div class="edu">
+<h3>B.E. in Electronics and Communication Engineering</h3>
+<p>Ballari Institute of Technology and Management, 2022 to 2026</p>
+<p class="stat">CGPA 8.25/10 · PUC 80% · SSLC 92%</p>
+</div>
+
+<h2>Certifications</h2>
+<ul class="cert">
+<li><b>Ultimate Big Data Masters Program</b>, TrendyTech. Hadoop, PySpark, Spark SQL, Azure Databricks, ETL pipeline design.</li>
+<li><b>RESTful API with HTTP and JavaScript</b>, Coursera Project Network.</li>
+<li><b>Fundamentals of Software Development</b>, Simplilearn SkillUp.</li>
+</ul>
+
+<footer>Languages: English, Kannada, Hindi, Telugu. Based in Bangalore, Karnataka. District-level football player.</footer>
+</main>
+</body>
+</html>
